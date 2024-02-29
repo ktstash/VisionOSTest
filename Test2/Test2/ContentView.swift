@@ -22,6 +22,7 @@ struct ContentView: View {
         VStack {
             RealityView { content in
                 // Add the initial RealityKit content
+                // Test Again
                 if let scene = try? await Entity(named: "Scene", in: realityKitContentBundle) {
                     content.add(scene)
                 }
